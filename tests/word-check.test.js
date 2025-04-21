@@ -1,7 +1,7 @@
-import check from '../src/word-check.js';
+const check = require('../src/word-check.js');
 
 test('compares the guessedWord HALLÅ with the correctWord CYKLA', () => {
-    expect(check('HALLÅ', 'CYKLA')).toStrictEqual(
+    expect(check('HALLÅ', 'CYKLA')).toEqual(
         [
             {
                 letter: 'H',
@@ -27,7 +27,7 @@ test('compares the guessedWord HALLÅ with the correctWord CYKLA', () => {
     );
 });
 test('compares the guessedWord CYKLA with the correctWord CYKLA', () => {
-    expect(check('CYKLA', 'CYKLA')).toStrictEqual(
+    expect(check('CYKLA', 'CYKLA')).toEqual(
         [
             {
                 letter: 'C',

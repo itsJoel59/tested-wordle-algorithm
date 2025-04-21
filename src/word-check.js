@@ -1,4 +1,4 @@
-export default function check(guess, correctWord) {
+function check(guess, correctWord) {
     const letters = {
         guessLetters: [],
         correctWordLetters: []
@@ -44,4 +44,4 @@ export default function check(guess, correctWord) {
         }
     }
 }
-check('HALLÅ', 'CYKLA');
+module.exports = check;
